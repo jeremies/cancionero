@@ -193,20 +193,12 @@ a {
 }
 
 .masthead-title {
-  margin: 0;
+  margin: 0 0 1rem;
   font-family: var(--font-serif);
   font-size: clamp(2rem, 6vw, 2.75rem);
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.1;
-}
-
-.masthead-subtitle {
-  margin: 0.35rem 0 1rem;
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 1.2rem;
-  color: var(--accent-primary);
 }
 
 .jump-section {
@@ -521,6 +513,8 @@ a {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0.4rem;
   margin-top: 0.75rem;
+  max-height: min(50dvh, 320px);
+  overflow-y: auto;
 }
 
 .popover-num-btn {
@@ -630,6 +624,11 @@ a {
 
 .stanza + .stanza {
   margin-top: 1.35em;
+}
+
+.stanza-chorus {
+  border-left: 3px solid var(--accent-primary);
+  padding-left: 0.9rem;
 }
 
 .lyric-line {

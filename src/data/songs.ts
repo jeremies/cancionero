@@ -10,6 +10,7 @@ export const SONGS: Song[] = [...(songsData as Song[])].sort(
 export function normalizeText(value: string): string {
   return value
     .toLowerCase()
+    .replace(/[\u2018\u2019]/g, "'")
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '');
 }

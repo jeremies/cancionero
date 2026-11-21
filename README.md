@@ -1,4 +1,4 @@
-# Cancionero — Villancicos
+# Cancionero
 
 Aplicación web ligera y adaptada a móviles para elegir una canción por su número y leer la letra cómodamente mientras se canta en grupo.
 
@@ -33,8 +33,9 @@ Todas las canciones se encuentran en [`src/data/songs.json`](src/data/songs.json
 
 ```json
 {
-  "number": 11,
-  "title": "Mi nuevo villancico",
+  "number": 28,
+  "title": "Mi nueva canción",
+  "chorusStanzas": [1],
   "stanzas": [
     [
       "Primer verso de la primera estrofa,",
@@ -48,7 +49,7 @@ Todas las canciones se encuentran en [`src/data/songs.json`](src/data/songs.json
 }
 ```
 
-1. Añade un objeto nuevo al arreglo JSON con un `number` único, `title` y las estrofas (`stanzas`, arreglo de arreglos de versos).
+1. Añade un objeto nuevo al arreglo JSON con un `number` único, `title`, `stanzas` (arreglo de arreglos de versos) y opcionalmente `chorusStanzas` (índices basados en 0 de las estrofas de estribillo).
 2. Guarda el archivo y vuelve a ejecutar `npm run build`.
 
 ## Despliegue estático

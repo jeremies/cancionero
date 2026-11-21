@@ -29,7 +29,7 @@ export function useHashRoute() {
         ? `${song.number}. ${song.title} — Cancionero`
         : `Canción #${route.songNumber} — Cancionero`;
     } else {
-      document.title = 'Cancionero — Villancicos';
+      document.title = 'Cancionero';
     }
 
     if (typeof window.scrollTo === 'function') {

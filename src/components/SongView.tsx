@@ -490,15 +490,21 @@ export function SongView({
           <div className="double-divider song-divider" aria-hidden="true" />
 
           <div className="lyrics-body">
-            {song.stanzas.map((stanza, stanzaIdx) => (
-              <div key={stanzaIdx} className="stanza">
-                {stanza.map((line, lineIdx) => (
-                  <p key={lineIdx} className="lyric-line">
-                    {line}
-                  </p>
-                ))}
-              </div>
-            ))}
+            {song.stanzas.map((stanza, stanzaIdx) => {
+              const isChorus = song.chorusStanzas?.includes(stanzaIdx) ?? false;
+              return (
+                <div
+                  key={stanzaIdx}
+                  className={isChorus ? 'stanza stanza-chorus' : 'stanza'}
+                >
+                  {stanza.map((line, lineIdx) => (
+                    <p key={lineIdx} className="lyric-line">
+                      {line}
+                    </p>
+                  ))}
+                </div>
+              );
+            })}
           </div>
         </article>
 

@@ -1,6 +1,349 @@
 [
   {
     "number": 1,
+    "title": "A Betlem me'n vull anar",
+    "stanzas": [
+      [
+        "A Betlem me'n vull anar",
+        "vols venir tu gallineta?",
+        "A Betlem me'n vull anar",
+        "vols venir tu rabadà?"
+      ],
+      [
+        "Un xiulet li vull comprar;",
+        "un xiulet li vull comprar.",
+        "Xiu, xiu, xiu farà el xiulet;",
+        "xiribit, xiribet;",
+        "a Betlem, au, au,",
+        "a Betlem si us plau."
+      ],
+      [
+        "Un timbal li vull comprar.",
+        "Tam, tam, tam, farà el timbal."
+      ],
+      [
+        "Un gatet li vull comprar.",
+        "Miau, miau, miau, farà el gatet."
+      ],
+      [
+        "Un gosset li vull comprar.",
+        "Guau, guau, guau, farà el gosset."
+      ]
+    ]
+  },
+  {
+    "number": 2,
+    "title": "El desembre congelat",
+    "stanzas": [
+      [
+        "El desembre congelat,",
+        "confós es retira.",
+        "Abril de flors coronat,",
+        "tot el món admira.",
+        "Quan en un jardí d'amor",
+        "neix una divina flor,",
+        "d'una ro ro ro,",
+        "d'una sa sa sa,",
+        "d'una ro, d'una sa,",
+        "d'una rosa bella,",
+        "fecunda i poncella."
+      ],
+      [
+        "El primer pare causà,",
+        "la nit tenebrosa,",
+        "que a tot el món ofuscà",
+        "la vista penosa;",
+        "mes, en una mitja nit,",
+        "brilla el sol que n'és eixit,",
+        "d'una be be be,",
+        "d'una la la la,",
+        "d'una be, d'una lla,",
+        "d'una bella aurora",
+        "que el cel enamora."
+      ]
+    ]
+  },
+  {
+    "number": 3,
+    "title": "El dimoni escuat",
+    "stanzas": [
+      [
+        "Allà sota una penya n'és nat el Jesuset, nuet, nuet, (2)",
+        "que és fill de mare verge i està mig mort de fred, pobret, pobret,",
+        "i està mig mort de fred."
+      ],
+      [
+        "El bon Josep li deia: Jesús que esteu fredet, pobret, pobret! (2)",
+        "La Verge en responia: per falta d'abriguet, pobret, pobret,",
+        "per falta d'abriguet!"
+      ],
+      [
+        "Pastors hi arribaren allà a la mitja nit, cric-cric, cric-cric! (2)",
+        "Veient que tots hi anaven, del gran fins al més xic, cric-cric, cric-cric,",
+        "del gran fins al més xic."
+      ],
+      [
+        "A prop d'allí passava un dimoni escuat, patrip, patrap! (2)",
+        "Sentint tanta gatzara a dins se n'és ficat, patrip, patrap,",
+        "a dins se n'és ficat!"
+      ],
+      [
+        "Els pastorets en veure'l s'hi tiren al damunt, patim, patum! (2)",
+        "I tantes n'hi mesuren que el deixen mig difunt, patim, patum,",
+        "que el deixen mig difunt!"
+      ]
+    ]
+  },
+  {
+    "number": 4,
+    "title": "El rabadà",
+    "stanzas": [
+      [
+        "-A Betlem me'n vull anar (2)",
+        "vols venir tu, rabadà? (2)",
+        "-Vull esmorzar!"
+      ],
+      [
+        "-A Betlem esmorzarem (2)",
+        "i a Jesús arribarem (2)",
+        "-I amb neu hi anirem?"
+      ],
+      [
+        "-Per la neu, que pel camí hi ha (2)",
+        "la calor ja la fondrà (2)",
+        "-Oh, i la que fa!"
+      ],
+      [
+        "-Que no saps que aquesta nit (2)",
+        "ha nascut Déu infinit (2)",
+        "-Qui t'ho ha dit?"
+      ],
+      [
+        "Doncs un angel que, volant, (2)",
+        "ens ho anava anunciant (2)",
+        "No serà tant"
+      ],
+      [
+        "Doncs avant i no badem, (2)",
+        "que ja és hora que marxem. (2)",
+        "Cap a Betlem!"
+      ]
+    ]
+  },
+  {
+    "number": 5,
+    "title": "El trineu",
+    "stanzas": [
+      [
+        "Per damunt la neu, lleuger dalt d'un trineu",
+        "Pels camps corro rabent, alegre i somrient;",
+        "Fent dringar els cascavells, com argentins joiells,",
+        "Res bo no trobareu com viatjar dalt d'un trineu."
+      ],
+      [
+        "Ding, dang, dong! Ding, dang, dong! Dringueu sens parar,",
+        "Anar en trineu és divertit tant de dia com de nit!",
+        "Ding, dang, dong! Ding, dang, dong! Dringueu sens parar,",
+        "I en la nit d'aquest Nadal correrem tots al Portal."
+      ],
+      [
+        "Tot cobert de neu, llevat del nostre cor,",
+        "Per'xò tots junts cantem la cançó del trineu,",
+        "I voli la il·lusió amb aquesta cançó",
+        "I així de molt bon grat s'afermi la nostra amistat."
+      ],
+      [
+        "Ding, dang, dong!..."
+      ]
+    ]
+  },
+  {
+    "number": 6,
+    "title": "Fum, fum, fum",
+    "stanzas": [
+      [
+        "El vint-i-cinc de desembre,",
+        "FUM, FUM, FUM (2)",
+        "ha nascut un minyonet",
+        "ros i blanquet, ros i blanquet;",
+        "fill de la Verge Maria,",
+        "és nat en una establia,",
+        "FUM, FUM, FUM."
+      ],
+      [
+        "Aquí dalt de la muntanya,",
+        "FUM, FUM, FUM (2)",
+        "si n'hi ha dos pastorets,",
+        "abrigadets, abrigadets,",
+        "amb la pell i la samarra,",
+        "mengen ous i butifarra,",
+        "FUM, FUM, FUM."
+      ],
+      [
+        "Qui dirà més gran mentida?",
+        "FUM, FUM, FUM (2)",
+        "ja repon el majoral,",
+        "amb gran cabal, amb gran cabal,",
+        "jo faré deu mil camades",
+        "amb un salt totes plegades,",
+        "FUM, FUM, FUM."
+      ],
+      [
+        "Déu nos do unes santes festes,",
+        "FUM, FUM, FUM (2),",
+        "faci fred, facil calor,",
+        "serà el millor, serà el millor,",
+        "de Jesús fer gran memòria",
+        "perquè ens vulgui dalt la Glòria.",
+        "FUM, FUM, FUM."
+      ]
+    ]
+  },
+  {
+    "number": 7,
+    "title": "L'àngel i els pastors",
+    "stanzas": [
+      [
+        "Pastorets de la muntanya",
+        "Que viviu amb gran recel, amb gran recel,",
+        "Desperteu, veniu de pressa",
+        "Que n'és nat el Rei del cel"
+      ],
+      [
+        "Cap al migdia canta i refila;",
+        "Toca Pasqual repica el timbal,",
+        "Rampataplam, rampataplam!",
+        "Que són festes d'alegria",
+        "Pasqües Santes de Nadal."
+      ],
+      [
+        "Què és aquest soroll que sento",
+        "A aquesta hora en el corral?",
+        "Espereu que si jo baixo",
+        "Sabreu qui és en Pasqual"
+      ],
+      [
+        "Cap al migdia..."
+      ],
+      [
+        "Ai Pasqual, no t'hi enfadis,",
+        "Car jo sóc l'àngel del cel,",
+        "Que aquí vinc a anunciar-vos",
+        "Que ja és nat el Rei del Cel."
+      ],
+      [
+        "Cap al migdia..."
+      ]
+    ]
+  },
+  {
+    "number": 8,
+    "title": "Les dotze van tocant",
+    "stanzas": [
+      [
+        "Les dotze van tocant",
+        "ja és nat el Déu Infant",
+        "fill de Maria."
+      ],
+      [
+        "El cel és estrellat",
+        "el món és tot glaçat",
+        "neva i venteja."
+      ],
+      [
+        "La Mare i el Fillet",
+        "estan mig morts de fred",
+        "i el Vell tremola."
+      ],
+      [
+        "Josep a poc a poc",
+        "encén allà un gran foc",
+        "i els àngels canten."
+      ],
+      [
+        "En mig de fred i neu,",
+        "el foc d'amor d'un Déu",
+        "els cors desglaça."
+      ],
+      [
+        "Per això tots van cantant:",
+        "ja és nat el Déu Infant",
+        "fill de Maria."
+      ]
+    ]
+  },
+  {
+    "number": 9,
+    "title": "Què li darem a n'el Noi de la Mare",
+    "stanzas": [
+      [
+        "Què li darem en el Noi de la Mare?",
+        "Què li darem que li sàpiga bo?",
+        "Panses i figues i nous i olives,",
+        "panses i figues i mel i mató."
+      ],
+      [
+        "Què li darem al fillet de Maria?",
+        "Què li darem al formós infantó?",
+        "Li darem panses amb unes balances,",
+        "Li darem figues amb un paneró"
+      ],
+      [
+        "Tam, pa-tam-tam, que les figues són verdes,",
+        "Tam, pa-tam-tam, que ja maduraran.",
+        "Si no maduren el dia de Pasqua",
+        "Maduraran en el dia del Ram"
+      ]
+    ]
+  },
+  {
+    "number": 10,
+    "title": "Sant Josep i la Mare de Déu",
+    "stanzas": [
+      [
+        "Sant Josep i la Mare de Déu",
+        "Feren companyia bonà;",
+        "Partiren de Natzaret,",
+        "Matinet a la bona hora.",
+        "Don, dorondon,",
+        "La Mare canta i el Fillet dorm."
+      ],
+      [
+        "No en troben posada enlloc,",
+        "De tant que la gent és pobra,",
+        "Si no és un barraconet",
+        "Tot ple de joncs i de boga.",
+        "Don, dorondon,",
+        "La Mare canta i el Fillet dorm."
+      ],
+      [
+        "Sant Josep va a cercar foc",
+        "A la ciutat i no en troba;",
+        "Quan Sant Josep fou tornat,",
+        "Deslliurada fou l'esposa.",
+        "Don, dorondon,",
+        "La Mare canta i el Fillet dorm."
+      ],
+      [
+        "Josep se'n posa a ballar",
+        "Amb gipó i la calça closa;",
+        "La Mare de Déu li diu:",
+        "-Vós, Josep, heu tornat jove!",
+        "Don, dorondon,",
+        "La Mare canta i el Fillet dorm."
+      ],
+      [
+        "Maria teniu raó:",
+        "Vostre Fillet m'enamora,",
+        "Resplendent n'és com un sol",
+        "I brillant com una aurora",
+        "Don, dorondon,",
+        "La Mare canta i el Fillet dorm"
+      ]
+    ]
+  },
+  {
+    "number": 11,
     "title": "Feliz Navidad",
     "stanzas": [
       [
@@ -17,7 +360,7 @@
     ]
   },
   {
-    "number": 2,
+    "number": 12,
     "title": "Campana sobre campana",
     "stanzas": [
       [
@@ -77,7 +420,7 @@
     ]
   },
   {
-    "number": 3,
+    "number": 13,
     "title": "Los peces en el río",
     "stanzas": [
       [
@@ -119,7 +462,7 @@
     ]
   },
   {
-    "number": 4,
+    "number": 14,
     "title": "El Tamborilero",
     "stanzas": [
       [
@@ -149,7 +492,7 @@
     ]
   },
   {
-    "number": 5,
+    "number": 15,
     "title": "Noche de Paz",
     "stanzas": [
       [
@@ -177,7 +520,7 @@
     ]
   },
   {
-    "number": 6,
+    "number": 16,
     "title": "Les anges dans nos campagnes",
     "stanzas": [
       [
@@ -204,7 +547,7 @@
     ]
   },
   {
-    "number": 7,
+    "number": 17,
     "title": "Rin, Rin",
     "stanzas": [
       [
@@ -250,7 +593,7 @@
     ]
   },
   {
-    "number": 8,
+    "number": 18,
     "title": "La Marimorena",
     "stanzas": [
       [
@@ -284,7 +627,7 @@
     ]
   },
   {
-    "number": 9,
+    "number": 19,
     "title": "!Ay, del Chiquirritín!",
     "stanzas": [
       [
@@ -308,7 +651,7 @@
     ]
   },
   {
-    "number": 10,
+    "number": 20,
     "title": "Adeste fideles",
     "stanzas": [
       [
@@ -329,6 +672,247 @@
         "Aeterni Parentis splendorem aeternum,",
         "Velatum sub carne videbimus",
         "Delum Infantem, pannis involutum."
+      ]
+    ]
+  },
+  {
+    "number": 21,
+    "title": "Cielito lindo",
+    "chorusStanzas": [1],
+    "stanzas": [
+      [
+        "De la Sierra Morena",
+        "Cielito lindo, vienen bajando",
+        "Un par de ojitos negros",
+        "Cielito lindo, de contrabando"
+      ],
+      [
+        "Ay, ay, ay, ay,",
+        "Canta y no llores",
+        "Porque cantando se alegran",
+        "Cielito lindo, los corazones"
+      ],
+      [
+        "Pájaro que abandona",
+        "Cielito lindo, su primer nido",
+        "Si lo encuentra ocupado",
+        "Cielito lindo, bien merecido"
+      ],
+      [
+        "Ese lunar que tienes",
+        "Cielito lindo, junto a la boca",
+        "No se lo des a nadie",
+        "Cielito lindo, que a mí me toca"
+      ],
+      [
+        "Si tu boquita morena",
+        "Fuera de azúcar, fuera de azúcar",
+        "Yo me lo pasaría",
+        "Cielito lindo, chupa que chupa"
+      ],
+      [
+        "De tu casa a la mía",
+        "Cielito lindo, no hay más que un paso",
+        "Antes que venga tu madre",
+        "Cielito lindo, dame un abrazo"
+      ],
+      [
+        "Una flecha en el aire",
+        "Cielito lindo, lanzó cupido",
+        "Y como fue jugando",
+        "Cielito lindo, yo fui el herido"
+      ]
+    ]
+  },
+  {
+    "number": 22,
+    "title": "La sirena",
+    "chorusStanzas": [2],
+    "stanzas": [
+      [
+        "Cuando mi barco navega",
+        "Por la llanura del mar",
+        "Pongo atención por si escucho",
+        "A una sirena cantar"
+      ],
+      [
+        "Dicen que murió de amores",
+        "Quién su canción escuchó",
+        "Yo doy gustoso la vida",
+        "Siempre que sea por amor"
+      ],
+      [
+        "Corre, vuela",
+        "Corta las olas del mar",
+        "Quien pudiera",
+        "A una sirena encontrar"
+      ],
+      [
+        "Corre, vuela",
+        "Corta las olas del mar",
+        "Quien pudiera",
+        "A una sirena encontrar"
+      ]
+    ]
+  },
+  {
+    "number": 23,
+    "title": "Despierta",
+    "stanzas": [
+      [
+        "Despierta, niña, despierta",
+        "despierta si estás dormida,",
+        "escucha las dulces notas",
+        "que canta la estudiantina."
+      ],
+      [
+        "Sal niña al balcón",
+        "y oirás nuestras canciones,",
+        "que salen del fondo del alma",
+        "y alegran los corazones."
+      ],
+      [
+        "Debajo de tu ventana",
+        "hay un lindo mirador,",
+        "donde se para la tuna",
+        "para cantar tu canción."
+      ],
+      [
+        "Ya sé que estás en la cama",
+        "ya sé que no duermes, no,",
+        "ya sé que estás escuchando",
+        "las notas de mi canción."
+      ],
+      [
+        "No vayas, mira que no vayas,",
+        "donde la mar se agita",
+        "que si dulce es la brisa",
+        "más dulce será el amor."
+      ]
+    ]
+  },
+  {
+    "number": 24,
+    "title": "Clavelitos",
+    "chorusStanzas": [1],
+    "stanzas": [
+      [
+        "Mocita dame el clavel,",
+        "Dame el clavel de tu boca,",
+        "Que pá eso no hay que tener",
+        "Mucha vergüenza ni poca.",
+        "Yo te daré el cascabel,",
+        "Te lo prometo mocita,",
+        "Si tu me das esa miel",
+        "Que llevas en la boquita."
+      ],
+      [
+        "Clavelitos, clavelitos,",
+        "Clavelitos de mi corazón.",
+        "Hoy te traigo clavelitos",
+        "Colorados igual que un fresón.",
+        "Si algún día clavelitos",
+        "No lograra poderte traer,",
+        "No te creas que ya no te quiero,",
+        "Es que no te los pude traer."
+      ],
+      [
+        "La tarde que a media luz",
+        "Vi tu boquita de guinda,",
+        "Yo no he visto en Sta. Cruz",
+        "Otra mocita más linda.",
+        "Y luego al ver el clavel",
+        "Que llevabas en el pelo,",
+        "Mirándolo creí ver",
+        "Un pedacito de cielo."
+      ]
+    ]
+  },
+  {
+    "number": 25,
+    "title": "És l'hora dels adéus",
+    "stanzas": [
+      [
+        "És l'hora dels adéus",
+        "i ens hem de dir: Adéu-siau!",
+        "Germans, dem-nos les mans,",
+        "senyal d'amor, senyal de pau."
+      ],
+      [
+        "El nostre comiat diu:",
+        "A reveure si a Déu plau!",
+        "I ens estrenyem ben fort",
+        "mentre diem: Adéu-siau."
+      ],
+      [
+        "No és un adéu per sempre,",
+        "és un adéu per un instant;",
+        "el cercle refarem",
+        "I fins potser serà més gran."
+      ],
+      [
+        "La llei que ens agermana,",
+        "ens fa més forts i ens fa més grans.",
+        "Si ens fa més bons minyons,",
+        "també ens fa ser més catalans."
+      ]
+    ]
+  },
+  {
+    "number": 26,
+    "title": "Esta noche no alumbra",
+    "stanzas": [
+      [
+        "Esta noche no alumbra",
+        "la farola del mar",
+        "esta noche no alumbra,",
+        "porque no tiene gas",
+        "porque no tiene gas",
+        "porque no tiene gas",
+        "esta noche no alumbra",
+        "la farola del mar."
+      ]
+    ]
+  },
+  {
+    "number": 27,
+    "title": "Triste y sola",
+    "stanzas": [
+      [
+        "Las calles están mojadas",
+        "y parece que llovió, que llovió,",
+        "son lágrimas de una niña,",
+        "de una mujer que lloró."
+      ],
+      [
+        "Triste y sola",
+        "sola se queda la escuela,",
+        "triste y llorosa",
+        "se queda la facultad."
+      ],
+      [
+        "Y los libros,",
+        "y los libros empeñados",
+        "en el Monte",
+        "en el Monte de Piedad ."
+      ],
+      [
+        "No te acuerdas cuando te decía,",
+        "a la pálida luz de la luna,",
+        "yo no puedo querer más que a una",
+        "y esa una, mi vida, eres tú."
+      ],
+      [
+        "Triste y sola",
+        "sola se queda la escuela,",
+        "triste y llorosa",
+        "se queda la facultad."
+      ],
+      [
+        "Y los libros,",
+        "y los libros empeñados",
+        "en el Monte",
+        "en el Monte de Piedad."
       ]
     ]
   }

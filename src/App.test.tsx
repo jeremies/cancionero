@@ -14,20 +14,22 @@ describe('Cancionero App', () => {
     cleanup();
   });
 
-  it('renders the home index with all 10 songs and jumps directly by number', async () => {
+  it('renders the home index with all 27 songs without subtitle and jumps directly by number', async () => {
     const user = userEvent.setup();
     render(<App />);
 
     expect(
       screen.getByRole('heading', { name: 'Cancionero' }),
     ).toBeInTheDocument();
-    expect(screen.getAllByRole('link')).toHaveLength(10);
+    expect(screen.queryByText('Villancicos')).not.toBeInTheDocument();
+    expect(document.title).toBe('Cancionero');
+    expect(screen.getAllByRole('link')).toHaveLength(27);
 
     const input = screen.getByLabelText(/Ir a la canción/i);
-    await user.type(input, '7');
+    await user.type(input, '17');
     await user.click(screen.getByRole('button', { name: 'Ir' }));
 
-    expect(window.location.hash).toBe('#/7');
+    expect(window.location.hash).toBe('#/17');
     expect(
       screen.getByRole('heading', { name: 'Rin, Rin' }),
     ).toBeInTheDocument();
@@ -62,9 +64,9 @@ describe('Cancionero App', () => {
     expect(links[0]).toHaveTextContent('Los peces en el río');
   });
 
-  it('opens direct hash route #/4, adjusts font size, toggles theme, and navigates between songs', async () => {
+  it('opens direct hash route #/14, adjusts font size, toggles theme, and navigates between songs', async () => {
     const user = userEvent.setup();
-    window.location.hash = '#/4';
+    window.location.hash = '#/14';
     render(<App />);
 
     expect(
@@ -99,18 +101,31 @@ describe('Cancionero App', () => {
       screen.getByRole('button', { name: 'Ir a otra canción' }),
     );
     await user.click(
-      screen.getByRole('button', { name: /9\. !Ay, del Chiquirritín!/i }),
+      screen.getByRole('button', { name: /19\. !Ay, del Chiquirritín!/i }),
     );
-    expect(window.location.hash).toBe('#/9');
+    expect(window.location.hash).toBe('#/19');
     expect(
       screen.getByRole('heading', { name: '!Ay, del Chiquirritín!' }),
     ).toBeInTheDocument();
 
     await user.click(screen.getByRole('link', { name: /Siguiente/i }));
-    expect(window.location.hash).toBe('#/10');
+    expect(window.location.hash).toBe('#/20');
     expect(
       screen.getByRole('heading', { name: 'Adeste fideles' }),
     ).toBeInTheDocument();
+  });
+
+  it('renders chorus bar styling on chorus stanzas', () => {
+    window.location.hash = '#/21';
+    render(<App />);
+
+    expect(
+      screen.getByRole('heading', { name: 'Cielito lindo' }),
+    ).toBeInTheDocument();
+
+    const chorusStanzas = document.querySelectorAll('.stanza-chorus');
+    expect(chorusStanzas).toHaveLength(1);
+    expect(chorusStanzas[0]).toHaveTextContent('Ay, ay, ay, ay,');
   });
 
   it('renders Spanish not-found view for invalid song hash #/99', () => {

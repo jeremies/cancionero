@@ -130,7 +130,6 @@ export function HomeView({
           <h1 id="masthead-title" className="masthead-title">
             Cancionero
           </h1>
-          <p className="masthead-subtitle">Villancicos</p>
           <div className="double-divider" aria-hidden="true" />
         </section>
 
