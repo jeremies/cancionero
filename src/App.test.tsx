@@ -14,7 +14,7 @@ describe('Cancionero App', () => {
     cleanup();
   });
 
-  it('renders the home index with all 27 songs without subtitle and jumps directly by number', async () => {
+  it('renders the home index with all 28 songs without subtitle and jumps directly by number', async () => {
     const user = userEvent.setup();
     render(<App />);
 
@@ -23,7 +23,7 @@ describe('Cancionero App', () => {
     ).toBeInTheDocument();
     expect(screen.queryByText('Villancicos')).not.toBeInTheDocument();
     expect(document.title).toBe('Cancionero');
-    expect(screen.getAllByRole('link')).toHaveLength(27);
+    expect(screen.getAllByRole('link')).toHaveLength(28);
 
     const input = screen.getByLabelText(/Ir a la canción/i);
     await user.type(input, '17');
@@ -115,17 +115,33 @@ describe('Cancionero App', () => {
     ).toBeInTheDocument();
   });
 
-  it('renders chorus bar styling on chorus stanzas', () => {
+  it('renders chorus bar styling on chorus stanzas', async () => {
+    const user = userEvent.setup();
     window.location.hash = '#/21';
     render(<App />);
 
     expect(
+      screen.getByRole('heading', { name: 'La mula' }),
+    ).toBeInTheDocument();
+
+    const mulaChorusStanzas = document.querySelectorAll('.stanza-chorus');
+    expect(mulaChorusStanzas).toHaveLength(2);
+    expect(mulaChorusStanzas[0]).toHaveTextContent(
+      '¡Qué suerte tengo!, piensa la mula,',
+    );
+    expect(mulaChorusStanzas[1]).toHaveTextContent(
+      '¡Qué suerte tengo!, piensa la mula,',
+    );
+
+    await user.click(screen.getByRole('link', { name: /Siguiente/i }));
+    expect(window.location.hash).toBe('#/22');
+    expect(
       screen.getByRole('heading', { name: 'Cielito lindo' }),
     ).toBeInTheDocument();
 
-    const chorusStanzas = document.querySelectorAll('.stanza-chorus');
-    expect(chorusStanzas).toHaveLength(1);
-    expect(chorusStanzas[0]).toHaveTextContent('Ay, ay, ay, ay,');
+    const cielitoChorusStanzas = document.querySelectorAll('.stanza-chorus');
+    expect(cielitoChorusStanzas).toHaveLength(1);
+    expect(cielitoChorusStanzas[0]).toHaveTextContent('Ay, ay, ay, ay,');
   });
 
   it('renders Spanish not-found view for invalid song hash #/99', () => {

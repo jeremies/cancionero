@@ -10,8 +10,8 @@ import {
 import { parseHashRoute } from '../utils/routing';
 
 describe('songs catalog', () => {
-  it('contains all 27 songs numbered 1 through 27 with exact titles', () => {
-    expect(SONGS).toHaveLength(27);
+  it('contains all 28 songs numbered 1 through 28 with exact titles', () => {
+    expect(SONGS).toHaveLength(28);
     expect(SONGS.map((s) => [s.number, s.title])).toEqual([
       [1, "A Betlem me'n vull anar"],
       [2, 'El desembre congelat'],
@@ -33,15 +33,16 @@ describe('songs catalog', () => {
       [18, 'La Marimorena'],
       [19, '!Ay, del Chiquirritín!'],
       [20, 'Adeste fideles'],
-      [21, 'Cielito lindo'],
-      [22, 'La sirena'],
-      [23, 'Despierta'],
-      [24, 'Clavelitos'],
-      [25, "És l'hora dels adéus"],
-      [26, 'Esta noche no alumbra'],
-      [27, 'Triste y sola'],
+      [21, 'La mula'],
+      [22, 'Cielito lindo'],
+      [23, 'La sirena'],
+      [24, 'Despierta'],
+      [25, 'Clavelitos'],
+      [26, "És l'hora dels adéus"],
+      [27, 'Esta noche no alumbra'],
+      [28, 'Triste y sola'],
     ]);
-    expect(formatAvailableRange()).toBe('1–27');
+    expect(formatAvailableRange()).toBe('1–28');
   });
 
   it('preserves verbatim PDF text, spelling quirks, and chorus metadata', () => {
@@ -85,20 +86,33 @@ describe('songs catalog', () => {
     expect(song20).toContain('Delum Infantem, pannis involutum.');
 
     const song21 = getSongByNumber(21);
-    expect(song21?.chorusStanzas).toEqual([1]);
+    expect(song21?.title).toBe('La mula');
+    expect(song21?.chorusStanzas).toEqual([2, 4]);
+    const song21Text = song21?.stanzas.flat().join('\n') ?? '';
+    expect(song21Text).toContain('aún no sé como es, (lara lala),');
+    expect(song21Text).toContain('y le dice a José, (lara,lala,)');
+    expect(song21Text).toContain('"Verás como esta noche');
+    expect(song21Text).toContain('Mientras con la mirada,');
+    expect(song21Text).toContain('que milagro tan grande,');
+    expect(song21Text).toContain('voy a correr, voy a correr,');
+    expect(song21Text).not.toContain('punteos de guitarra');
+    expect(song21Text).not.toContain('youtube.com');
 
     const song22 = getSongByNumber(22);
-    expect(song22?.chorusStanzas).toEqual([2]);
-    expect(song22?.stanzas.flat().join('\n')).toContain('Quién su canción escuchó');
+    expect(song22?.chorusStanzas).toEqual([1]);
 
-    const song24 = getSongByNumber(24);
-    expect(song24?.chorusStanzas).toEqual([1]);
-    const song24Text = song24?.stanzas.flat().join('\n') ?? '';
-    expect(song24Text).toContain('Que pá eso no hay que tener');
-    expect(song24Text).toContain('Si tu me das esa miel');
+    const song23 = getSongByNumber(23);
+    expect(song23?.chorusStanzas).toEqual([2]);
+    expect(song23?.stanzas.flat().join('\n')).toContain('Quién su canción escuchó');
 
-    const song27 = getSongByNumber(27)?.stanzas.flat().join('\n') ?? '';
-    expect(song27).toContain('en el Monte de Piedad .');
+    const song25 = getSongByNumber(25);
+    expect(song25?.chorusStanzas).toEqual([1]);
+    const song25Text = song25?.stanzas.flat().join('\n') ?? '';
+    expect(song25Text).toContain('Que pá eso no hay que tener');
+    expect(song25Text).toContain('Si tu me das esa miel');
+
+    const song28 = getSongByNumber(28)?.stanzas.flat().join('\n') ?? '';
+    expect(song28).toContain('en el Monte de Piedad .');
   });
 
   it('parses song numbers with optional leading hash and ignores non-positive values', () => {
@@ -118,8 +132,9 @@ describe('songs catalog', () => {
     expect(filterSongs('chiquirritin').map((s) => s.number)).toEqual([19]);
     expect(filterSongs('rabada').map((s) => s.number)).toEqual([4]);
     expect(filterSongs('l’angel').map((s) => s.number)).toEqual([7]);
-    expect(filterSongs('adeus').map((s) => s.number)).toEqual([25]);
-    expect(filterSongs('   ')).toHaveLength(27);
+    expect(filterSongs('mula').map((s) => s.number)).toEqual([21]);
+    expect(filterSongs('adeus').map((s) => s.number)).toEqual([26]);
+    expect(filterSongs('   ')).toHaveLength(28);
   });
 
   it('returns adjacent songs cleanly at boundaries and middle', () => {
@@ -131,8 +146,12 @@ describe('songs catalog', () => {
       prev: expect.objectContaining({ number: 13 }),
       next: expect.objectContaining({ number: 15 }),
     });
-    expect(getAdjacentSongs(27)).toEqual({
-      prev: expect.objectContaining({ number: 26 }),
+    expect(getAdjacentSongs(21)).toEqual({
+      prev: expect.objectContaining({ number: 20 }),
+      next: expect.objectContaining({ number: 22 }),
+    });
+    expect(getAdjacentSongs(28)).toEqual({
+      prev: expect.objectContaining({ number: 27 }),
       next: undefined,
     });
   });

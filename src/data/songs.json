@@ -677,6 +677,55 @@
   },
   {
     "number": 21,
+    "title": "La mula",
+    "chorusStanzas": [2, 4],
+    "stanzas": [
+      [
+        "Tengo que andar con cuidado, piensa la mula,",
+        "pues llevo sobre mí",
+        "a María y al Niño,",
+        "aún no sé como es, (lara lala),",
+        "mas pronto nacerá, (lara, lala),",
+        "tengo que darme prisa",
+        "y encontrar un lugar."
+      ],
+      [
+        "José va muy preocupado, pues hace frío,",
+        "la noche es muy oscura",
+        "y va a nacer el Niño.",
+        "María le consuela, (lara,lala)",
+        "y le dice a José, (lara,lala,)",
+        "\"Verás como esta noche",
+        "estaremos los tres.\""
+      ],
+      [
+        "¡Qué suerte tengo!, piensa la mula,",
+        "voy a correr,",
+        "voy a correr,",
+        "conozco un sitio donde quizás pueda nacer.",
+        "Corred pastores, id preparando, aquel lugar,",
+        "pedid ayuda dentro de nada van a llegar."
+      ],
+      [
+        "Tengo que darle mi aliento, piensa la mula,",
+        "Mientras con la mirada,",
+        "no lo deja un momento.",
+        "Es un niño precioso (lara, lala,)",
+        "nunca vi cosa igual (lara,lala,)",
+        "que milagro tan grande,",
+        "en un pobre portal."
+      ],
+      [
+        "¡Qué suerte tengo!, piensa la mula,",
+        "voy a correr, voy a correr,",
+        "conozco un sitio donde quizás pueda nacer.",
+        "Corred pastores, id preparando, aquel lugar,",
+        "pedid ayuda dentro de nada van a llegar."
+      ]
+    ]
+  },
+  {
+    "number": 22,
     "title": "Cielito lindo",
     "chorusStanzas": [1],
     "stanzas": [
@@ -725,7 +774,7 @@
     ]
   },
   {
-    "number": 22,
+    "number": 23,
     "title": "La sirena",
     "chorusStanzas": [2],
     "stanzas": [
@@ -756,7 +805,7 @@
     ]
   },
   {
-    "number": 23,
+    "number": 24,
     "title": "Despierta",
     "stanzas": [
       [
@@ -792,7 +841,7 @@
     ]
   },
   {
-    "number": 24,
+    "number": 25,
     "title": "Clavelitos",
     "chorusStanzas": [1],
     "stanzas": [
@@ -829,7 +878,7 @@
     ]
   },
   {
-    "number": 25,
+    "number": 26,
     "title": "És l'hora dels adéus",
     "stanzas": [
       [
@@ -859,7 +908,7 @@
     ]
   },
   {
-    "number": 26,
+    "number": 27,
     "title": "Esta noche no alumbra",
     "stanzas": [
       [
@@ -875,7 +924,7 @@
     ]
   },
   {
-    "number": 27,
+    "number": 28,
     "title": "Triste y sola",
     "stanzas": [
       [
