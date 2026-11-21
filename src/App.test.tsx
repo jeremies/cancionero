@@ -14,7 +14,7 @@ describe('Cancionero App', () => {
     cleanup();
   });
 
-  it('renders the home index with all 28 songs without subtitle and jumps directly by number', async () => {
+  it('renders the home index with all 29 songs without subtitle and jumps directly by number', async () => {
     const user = userEvent.setup();
     render(<App />);
 
@@ -23,7 +23,7 @@ describe('Cancionero App', () => {
     ).toBeInTheDocument();
     expect(screen.queryByText('Villancicos')).not.toBeInTheDocument();
     expect(document.title).toBe('Cancionero');
-    expect(screen.getAllByRole('link')).toHaveLength(28);
+    expect(screen.getAllByRole('link')).toHaveLength(29);
 
     const input = screen.getByLabelText(/Ir a la canción/i);
     await user.type(input, '17');
@@ -121,6 +121,21 @@ describe('Cancionero App', () => {
     render(<App />);
 
     expect(
+      screen.getByRole('heading', { name: 'Es de María' }),
+    ).toBeInTheDocument();
+
+    const mariaChorusStanzas = document.querySelectorAll('.stanza-chorus');
+    expect(mariaChorusStanzas).toHaveLength(2);
+    expect(mariaChorusStanzas[0]).toHaveTextContent(
+      'Le quiero cantar, le quiero bailar,',
+    );
+    expect(mariaChorusStanzas[1]).toHaveTextContent(
+      'Yoooo le quiero besar, le quiero cantar,',
+    );
+
+    await user.click(screen.getByRole('link', { name: /Siguiente/i }));
+    expect(window.location.hash).toBe('#/22');
+    expect(
       screen.getByRole('heading', { name: 'La mula' }),
     ).toBeInTheDocument();
 
@@ -134,7 +149,7 @@ describe('Cancionero App', () => {
     );
 
     await user.click(screen.getByRole('link', { name: /Siguiente/i }));
-    expect(window.location.hash).toBe('#/22');
+    expect(window.location.hash).toBe('#/23');
     expect(
       screen.getByRole('heading', { name: 'Cielito lindo' }),
     ).toBeInTheDocument();

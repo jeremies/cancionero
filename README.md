@@ -33,7 +33,7 @@ Todas las canciones se encuentran en [`src/data/songs.json`](src/data/songs.json
 
 ```json
 {
-  "number": 29,
+  "number": 30,
   "title": "Mi nueva canción",
   "chorusStanzas": [1],
   "stanzas": [

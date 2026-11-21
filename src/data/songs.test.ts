@@ -10,8 +10,8 @@ import {
 import { parseHashRoute } from '../utils/routing';
 
 describe('songs catalog', () => {
-  it('contains all 28 songs numbered 1 through 28 with exact titles', () => {
-    expect(SONGS).toHaveLength(28);
+  it('contains all 29 songs numbered 1 through 29 with exact titles', () => {
+    expect(SONGS).toHaveLength(29);
     expect(SONGS.map((s) => [s.number, s.title])).toEqual([
       [1, "A Betlem me'n vull anar"],
       [2, 'El desembre congelat'],
@@ -33,16 +33,17 @@ describe('songs catalog', () => {
       [18, 'La Marimorena'],
       [19, '!Ay, del Chiquirritín!'],
       [20, 'Adeste fideles'],
-      [21, 'La mula'],
-      [22, 'Cielito lindo'],
-      [23, 'La sirena'],
-      [24, 'Despierta'],
-      [25, 'Clavelitos'],
-      [26, "És l'hora dels adéus"],
-      [27, 'Esta noche no alumbra'],
-      [28, 'Triste y sola'],
+      [21, 'Es de María'],
+      [22, 'La mula'],
+      [23, 'Cielito lindo'],
+      [24, 'La sirena'],
+      [25, 'Despierta'],
+      [26, 'Clavelitos'],
+      [27, "És l'hora dels adéus"],
+      [28, 'Esta noche no alumbra'],
+      [29, 'Triste y sola'],
     ]);
-    expect(formatAvailableRange()).toBe('1–28');
+    expect(formatAvailableRange()).toBe('1–29');
   });
 
   it('preserves verbatim PDF text, spelling quirks, and chorus metadata', () => {
@@ -86,33 +87,48 @@ describe('songs catalog', () => {
     expect(song20).toContain('Delum Infantem, pannis involutum.');
 
     const song21 = getSongByNumber(21);
-    expect(song21?.title).toBe('La mula');
-    expect(song21?.chorusStanzas).toEqual([2, 4]);
+    expect(song21?.title).toBe('Es de María');
+    expect(song21?.chorusStanzas).toEqual([3, 5]);
+    expect(song21?.stanzas).toHaveLength(8);
     const song21Text = song21?.stanzas.flat().join('\n') ?? '';
-    expect(song21Text).toContain('aún no sé como es, (lara lala),');
-    expect(song21Text).toContain('y le dice a José, (lara,lala,)');
-    expect(song21Text).toContain('"Verás como esta noche');
-    expect(song21Text).toContain('Mientras con la mirada,');
-    expect(song21Text).toContain('que milagro tan grande,');
-    expect(song21Text).toContain('voy a correr, voy a correr,');
-    expect(song21Text).not.toContain('punteos de guitarra');
-    expect(song21Text).not.toContain('youtube.com');
+    expect(song21Text).toContain('¡yo quiero oír su voz!');
+    expect(song21Text).toContain('¡te doy mi corazón!');
+    expect(song21Text).toContain('Yoooo le quiero besar, le quiero cantar,');
+    expect(song21Text).toContain('¡Darle todo mi amor!');
+    expect(song21Text).toContain('Ha nacido el Hijo de Dios');
+    expect(song21Text).not.toContain('SOLISTA');
+    expect(song21Text).not.toContain('CORO');
+    expect(song21Text).not.toContain('Tajamar');
+    expect(song21Text).not.toContain('Los Secretos');
 
     const song22 = getSongByNumber(22);
-    expect(song22?.chorusStanzas).toEqual([1]);
+    expect(song22?.title).toBe('La mula');
+    expect(song22?.chorusStanzas).toEqual([2, 4]);
+    const song22Text = song22?.stanzas.flat().join('\n') ?? '';
+    expect(song22Text).toContain('aún no sé como es, (lara lala),');
+    expect(song22Text).toContain('y le dice a José, (lara,lala,)');
+    expect(song22Text).toContain('"Verás como esta noche');
+    expect(song22Text).toContain('Mientras con la mirada,');
+    expect(song22Text).toContain('que milagro tan grande,');
+    expect(song22Text).toContain('voy a correr, voy a correr,');
+    expect(song22Text).not.toContain('punteos de guitarra');
+    expect(song22Text).not.toContain('youtube.com');
 
     const song23 = getSongByNumber(23);
-    expect(song23?.chorusStanzas).toEqual([2]);
-    expect(song23?.stanzas.flat().join('\n')).toContain('Quién su canción escuchó');
+    expect(song23?.chorusStanzas).toEqual([1]);
 
-    const song25 = getSongByNumber(25);
-    expect(song25?.chorusStanzas).toEqual([1]);
-    const song25Text = song25?.stanzas.flat().join('\n') ?? '';
-    expect(song25Text).toContain('Que pá eso no hay que tener');
-    expect(song25Text).toContain('Si tu me das esa miel');
+    const song24 = getSongByNumber(24);
+    expect(song24?.chorusStanzas).toEqual([2]);
+    expect(song24?.stanzas.flat().join('\n')).toContain('Quién su canción escuchó');
 
-    const song28 = getSongByNumber(28)?.stanzas.flat().join('\n') ?? '';
-    expect(song28).toContain('en el Monte de Piedad .');
+    const song26 = getSongByNumber(26);
+    expect(song26?.chorusStanzas).toEqual([1]);
+    const song26Text = song26?.stanzas.flat().join('\n') ?? '';
+    expect(song26Text).toContain('Que pá eso no hay que tener');
+    expect(song26Text).toContain('Si tu me das esa miel');
+
+    const song29 = getSongByNumber(29)?.stanzas.flat().join('\n') ?? '';
+    expect(song29).toContain('en el Monte de Piedad .');
   });
 
   it('parses song numbers with optional leading hash and ignores non-positive values', () => {
@@ -132,9 +148,10 @@ describe('songs catalog', () => {
     expect(filterSongs('chiquirritin').map((s) => s.number)).toEqual([19]);
     expect(filterSongs('rabada').map((s) => s.number)).toEqual([4]);
     expect(filterSongs('l’angel').map((s) => s.number)).toEqual([7]);
-    expect(filterSongs('mula').map((s) => s.number)).toEqual([21]);
-    expect(filterSongs('adeus').map((s) => s.number)).toEqual([26]);
-    expect(filterSongs('   ')).toHaveLength(28);
+    expect(filterSongs('maria').map((s) => s.number)).toEqual([21]);
+    expect(filterSongs('mula').map((s) => s.number)).toEqual([22]);
+    expect(filterSongs('adeus').map((s) => s.number)).toEqual([27]);
+    expect(filterSongs('   ')).toHaveLength(29);
   });
 
   it('returns adjacent songs cleanly at boundaries and middle', () => {
@@ -150,8 +167,8 @@ describe('songs catalog', () => {
       prev: expect.objectContaining({ number: 20 }),
       next: expect.objectContaining({ number: 22 }),
     });
-    expect(getAdjacentSongs(28)).toEqual({
-      prev: expect.objectContaining({ number: 27 }),
+    expect(getAdjacentSongs(29)).toEqual({
+      prev: expect.objectContaining({ number: 28 }),
       next: undefined,
     });
   });

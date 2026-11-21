@@ -677,6 +677,63 @@
   },
   {
     "number": 21,
+    "title": "Es de María",
+    "chorusStanzas": [3, 5],
+    "stanzas": [
+      [
+        "Se oye un llanto en la oscuridad",
+        "Una estrella lo ilumina,",
+        "El bebé más bonito que hay",
+        "Es de María."
+      ],
+      [
+        "Se oye un llanto en la oscuridad",
+        "Una estrella lo ilumina,",
+        "Pastorcillos camino a un portal",
+        "Sus caras brillan."
+      ],
+      [
+        "San José no deja de llorar",
+        "Y la noche se ilumina,",
+        "El bebé más bonito que hay",
+        "Es de María."
+      ],
+      [
+        "Le quiero cantar, le quiero bailar,",
+        "¡yo quiero oír su voz!",
+        "No sé qué te puedo regalar",
+        "¡te doy mi corazón!"
+      ],
+      [
+        "Esta es una noche especial",
+        "Se respira alegría,",
+        "A este Niño yo quiero besar",
+        "¿Puedo, María?"
+      ],
+      [
+        "Yoooo le quiero besar, le quiero cantar,",
+        "¡Darle todo mi amor!",
+        "Todo yo te quiero regalar",
+        "¡Toma mi corazón!"
+      ],
+      [
+        "Desde hoy ya mi vida cambió",
+        "Tengo a alguien que me guía,",
+        "Un Niñito en un pobre portal",
+        "Es de María."
+      ],
+      [
+        "Nunca pensé que podría llorar",
+        "Tan intenso de alegría,",
+        "Navidad es un mundo mejor",
+        "Todos los días,",
+        "Ha nacido el Hijo de Dios",
+        "Es de María."
+      ]
+    ]
+  },
+  {
+    "number": 22,
     "title": "La mula",
     "chorusStanzas": [2, 4],
     "stanzas": [
@@ -725,7 +782,7 @@
     ]
   },
   {
-    "number": 22,
+    "number": 23,
     "title": "Cielito lindo",
     "chorusStanzas": [1],
     "stanzas": [
@@ -774,7 +831,7 @@
     ]
   },
   {
-    "number": 23,
+    "number": 24,
     "title": "La sirena",
     "chorusStanzas": [2],
     "stanzas": [
@@ -805,7 +862,7 @@
     ]
   },
   {
-    "number": 24,
+    "number": 25,
     "title": "Despierta",
     "stanzas": [
       [
@@ -841,7 +898,7 @@
     ]
   },
   {
-    "number": 25,
+    "number": 26,
     "title": "Clavelitos",
     "chorusStanzas": [1],
     "stanzas": [
@@ -878,7 +935,7 @@
     ]
   },
   {
-    "number": 26,
+    "number": 27,
     "title": "És l'hora dels adéus",
     "stanzas": [
       [
@@ -908,7 +965,7 @@
     ]
   },
   {
-    "number": 27,
+    "number": 28,
     "title": "Esta noche no alumbra",
     "stanzas": [
       [
@@ -924,7 +981,7 @@
     ]
   },
   {
-    "number": 28,
+    "number": 29,
     "title": "Triste y sola",
     "stanzas": [
       [
